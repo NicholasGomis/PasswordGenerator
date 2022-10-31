@@ -1,0 +1,19 @@
+Randomly make password 
+
+-- Letters 
+-- Number
+-- Mixed case (Upper and Lower Case)
+-- Special charcters 
+-- Length of Characters 
+
+plan: 
+All these should have array of characters.
+May be one array with all the characters---
+first function will filter out the array 
+then it will run random generator 
+Characters will be selected randomly and mixed with others array....
+
+6 characters password---
+
+
+
