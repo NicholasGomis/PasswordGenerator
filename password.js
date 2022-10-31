@@ -4,7 +4,7 @@ function password(e){
 
     const password = []
     for(let i = 0; i < e; i++){
-        password.push(letters[Math.ceil(Math.random()*7)])
+        password.push(letters[Math.floor(Math.random()*e)])
     }
 
     return password.join("")
