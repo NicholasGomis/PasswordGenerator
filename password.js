@@ -40,7 +40,7 @@ const btn = document.querySelector(".password")
 
 function inputV(){
     const inputValue = document.querySelector(".inputNum").value;
-    document.querySelector(".inputV").innerHTML = `Characters Numbers: ${inputValue}`
+    document.querySelector(".inputV").innerHTML = `Password Length: ${inputValue}`
 }
 
 
@@ -51,11 +51,25 @@ function generate(){
     const num = document.querySelector(".nums").checked;
     const inputValue = document.querySelector(".inputNum").value;
     console.log(inputValue, characters, upper, num, mixed)
-    document.querySelector(".inputV").innerHTML = `Characters Numbers: ${inputValue}`
     const password = passwordGenerator(inputValue, characters, upper, num, mixed);
     console.log(password)
-    document.querySelector(".result").innerHTML = `Password: ${password}`
+    document.querySelector(".result").value = `${password}`
 }
+
+function copy() {
+    // Get the text field
+    var copyText = document.getElementById("myInput");
+  
+    // Select the text field
+    copyText.select();
+    copyText.setSelectionRange(0, 99999); // For mobile devices
+  
+     // Copy the text inside the text field
+    navigator.clipboard.writeText(copyText.value);
+  
+    // Alert the copied text
+    alert("Copied the text: " + copyText.value);
+  }
 
 
 btn.addEventListener("click",  generate)
