@@ -1,31 +1,44 @@
 function passwordGenerator(input, characters,  capitalLetters, nums, mix){
     const alpha = Array.from(Array(94)).map((e, i)=> i+33);
     const newArr = alpha.map((e)=> String.fromCharCode(e));
-    var password;
+    var password = [];
     const re = /[A-Z]/g
     const reNum = /[0-9]/g
     const mixed = /[aA-zZ 0-9]/g
     const capNum = /[A-Z 0-9]/g
    if(capitalLetters){
     const cap = newArr.join("").match(re);
-    password = cap.sort(()=> Math.random() - Math.random()).slice(0, input)
-   }
+    console.log("i am ", cap)
+    for(let i = 0; i < input; i++){
+        password.push(cap[Math.ceil(Math.random()* cap.length-1)])
+    }
+    }
+   
+  
    if(nums){
     const cap = newArr.join("").match(reNum);
-    password = cap.sort(()=> Math.random() - Math.random()).slice(0, input)
+    for(let i = 0; i < input; i++){
+        password.push(cap[Math.ceil(Math.random()* cap.length-1)])
+    }
    }
    if(mix){
     const cap = newArr.join("").match(mixed);
-    password = cap.sort(()=> Math.random() - Math.random()).slice(0, input)
+    for(let i = 0; i < input; i++){
+        password.push(cap[Math.ceil(Math.random()* cap.length-1)])
+    }
    }
 
    if(nums && capitalLetters){
     const cap = newArr.join("").match(capNum);
-    password = cap.sort(()=> Math.random() - Math.random()).slice(0, input)
+    for(let i = 0; i < input; i++){
+        password.push(cap[Math.ceil(Math.random()* cap.length-1)])
+    }
    }
 
    if(characters){
-    password = newArr.sort(()=> Math.random() - Math.random()).slice(0, input)
+    for(let i = 0; i < input; i++){
+        password.push(newArr[Math.ceil(Math.random()* newArr.length-1 )])
+    }
    }
  
 console.log(password)
@@ -69,6 +82,10 @@ function copy() {
   
     // Alert the copied text
     alert("Copied the text: " + copyText.value);
+  }
+
+  function reset(){
+    location.reload()
   }
 
 

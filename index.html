@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="flex-box">
-        <h1>Random Password Generator</h1>
+        <h1 style="color: rgb(166, 125, 48);">Random Password Generator</h1>
    <h4 class="inputRange">Input Range: <input class="inputNum" type="range" min="4" max="95" onchange="inputV()" value= "12"/></h4>
    <p class="inputV"> Password Length: 12 </p>
    <div class="boxes">
@@ -21,8 +21,9 @@
     
     <div class="copyPassword">
         <button class="password">Get password</button>
-        <input id="myInput" class="result" />
+      <input id="myInput" class="result" />
         <button class="copyBtn" onclick="copy()">Copy Password</button>
+        <button class="reset" onclick="reset()">Reset</button>
     </div>
    
     
