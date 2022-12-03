@@ -13,6 +13,7 @@
 </h1>
 
 ## Purpose
+The purpose of this project is to create a password generator. User can select the number of characters and what type of characters to include in their password.
 
 
 
