@@ -5,8 +5,8 @@
 
 </div>
 <h1 align="center">
-<img src="https://i.ibb.co/gzD3Znr/lock-g823d15b0f-640.png" alt="logo"/>
- (Work in Progress)
+<img src="https://i.ibb.co/gzD3Znr/lock-g823d15b0f-640.png" alt="logo" width="200" height="300"/>
+
 
 
 
