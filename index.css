@@ -3,7 +3,8 @@
     flex-direction: column;
     align-items: center;
     padding-top: 50px;
-    background-image: url("./Keyboard-passwords.jpg");
+    /* background-image: url("./Keyboard-passwords.jpg"); */
+    background-color: bisque;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -11,11 +12,15 @@
     color: rgb(76, 65, 45);
 }
 
+.flex-box-two{
+        background-color: red;
+}
 .boxes{
     display: flex;
     flex-direction: row;
-    border: 2px solid rgb(242, 237, 210);
+    border: 2px solid red;
     border-radius: 5px;
+justify-content: space-between;
     margin: 10px;
     padding: 10px;
 }
