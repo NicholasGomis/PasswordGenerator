@@ -4,12 +4,12 @@
     align-items: center;
     padding-top: 50px;
     /* background-image: url("./Keyboard-passwords.jpg"); */
-    background-color: bisque;
+    background-color: #202124;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     /* background-attachment: fixed; */
-    color: rgb(76, 65, 45);
+    color: white;
 }
 
 .flex-box-two{
@@ -48,10 +48,23 @@ padding-top: 7px;
 
 
 .reset, .password, .copyBtn{
-    width: 200px;
-    border-radius: 5px;
-    height: 20px;
-    margin: 5px;
+display: block;
+    width: 150px;
+    padding: 8px 0;
+    margin: 20px auto;
+    background: #4979ff;
+    border-radius: 4px;
+    color: white;
+    text-align: center;
+    display: inline-block
+}
+
+.nums,
+.letters,
+.nums {
+ 
+    color: white;
+
 }
 
 .copyPassword{
